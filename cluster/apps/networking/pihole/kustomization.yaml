@@ -4,3 +4,4 @@ resources:
   - config-pvc.yaml
   - secret.sops.yaml
   - helm-release.yaml
+  - ingress.yaml

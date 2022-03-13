@@ -40,6 +40,7 @@ spec:
       # these won't actually show up in the PiHole gui, but they should be added to the dnsmasq config
       customDnsEntries:
         - address=/traefik.neilfrench.me/192.168.0.50
+        - address=/pihole.neilfrench.me/192.168.0.50
     persistentVolumeClaim:
       enabled: true
       existingClaim: pihole-config
