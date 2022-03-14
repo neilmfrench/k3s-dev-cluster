@@ -10,6 +10,7 @@ metadata:
     hajimari.io/enable: "pihole"
     hajimari.io/icon: "dns"
     traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
+    traefik.ingress.kubernetes.io/request-modifier: "AddPrefix: /admin"
 spec:
   ingressClassName: "traefik"
   tls:
