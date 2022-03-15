@@ -10,7 +10,7 @@ spec:
   routes:
     - kind: Rule
       match: Host(`pihole.neilfrench.me`)
-      priority: "1"
+      priority: 1
       middlewares:
         - name: pihole-redirectregex
           namespace: networking
