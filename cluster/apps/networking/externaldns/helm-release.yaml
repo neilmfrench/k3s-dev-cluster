@@ -38,7 +38,7 @@ spec:
     sources:
       - ingress
     # txtPrefix: "k8s."
-    # txtOwnerId: "home-ops"
+    txtOwnerId: "home-ops"
     domainFilters:
       - "${SECRET_DOMAIN}"
     resources:
