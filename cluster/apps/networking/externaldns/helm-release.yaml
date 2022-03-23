@@ -31,14 +31,14 @@ spec:
           secretKeyRef:
             name: cloudflare-ddns
             key: CLOUDFLARE_APIKEY
-    extra-args:
+    extraArgs:
       - --cloudflare-proxied
       - --annotation-filter=external-dns/is-public in (true)
     policy: sync
     sources:
       - ingress
-    txtPrefix: "k8s."
-    txtOwnerId: "home-ops"
+    # txtPrefix: "k8s."
+    # txtOwnerId: "home-ops"
     domainFilters:
       - "${SECRET_DOMAIN}"
     resources:
