@@ -37,7 +37,7 @@ spec:
     policy: sync
     sources:
       - ingress
-    # txtPrefix: "k8s."
+    txtPrefix: "k38s."
     txtOwnerId: "home-ops"
     # domainFilters:
     #   - "${SECRET_DOMAIN}"
