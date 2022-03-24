@@ -41,6 +41,7 @@ spec:
       customDnsEntries:
         - address=/traefik.neilfrench.me/192.168.0.50
         - address=/pihole.neilfrench.me/192.168.0.50
+        - address=/longhorn.neilfrench.me/192.168.0.50
     persistentVolumeClaim:
       enabled: true
       existingClaim: pihole-config
