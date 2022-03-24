@@ -27,11 +27,14 @@ spec:
     persistence:
       # TODO increase this when we have more than 2 nodes :(
       defaultClassReplicaCount: 2
+    csi:
+      attacherReplicaCount: 2
+      provisionerReplicaCount: 2
+      resizerReplicaCount: 2
+      snapshotterReplicaCount: 2
     defaultSettings:
       defaultReplicaCount: 2
-      createDefaultDiskLabeledNodes: true
       storageMinimalAvailablePercentage: "10"
-      defaultLonghornStaticStorageClass: "longhorn"
     ingress:
       enabled: true
       ingressClassName: "traefik"
