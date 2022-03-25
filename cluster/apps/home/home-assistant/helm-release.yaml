@@ -28,12 +28,12 @@ spec:
     #       name: home-assistant
     # hostNetwork: true
     # dnsPolicy: ClusterFirstWithHostNet
-    # service:
-    #   main:
-    #     type: LoadBalancer
-    #     externalIPs:
-    #       - "${SVC_HOME_ASSISTANT_ADDR}"
-    #     externalTrafficPolicy: Local
+    service:
+      main:
+        type: LoadBalancer
+        # externalIPs:
+        #   - "${SVC_HOME_ASSISTANT_ADDR}"
+        # externalTrafficPolicy: Local
     ingress:
       main:
         enabled: true
