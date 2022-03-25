@@ -33,7 +33,7 @@ spec:
         type: LoadBalancer
         # externalIPs:
         #   - "${SVC_HOME_ASSISTANT_ADDR}"
-        # externalTrafficPolicy: Local
+        externalTrafficPolicy: Local
     ingress:
       main:
         enabled: true
