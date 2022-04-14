@@ -42,6 +42,10 @@ spec:
         - address=/traefik.neilfrench.me/192.168.0.50
         - address=/pihole.neilfrench.me/192.168.0.50
         - address=/longhorn.neilfrench.me/192.168.0.50
+        - address=/k8s1/192.168.0.220
+        - address=/k8s2/192.168.0.194
+        - address=/k8s3/192.168.0.110
+        - address=/k8s4/192.168.0.186
     persistentVolumeClaim:
       enabled: true
       existingClaim: pihole-config
